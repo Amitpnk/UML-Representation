@@ -12,6 +12,8 @@
 * It has few diagram which is explained below
     * Activity Diagram
     * Use case diagram
+    * Class diagram
+    * Sequence diagram
 
 ### Activity Diagram
 
