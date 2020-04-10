@@ -19,6 +19,8 @@ Activity diagram used to capture complicated process flows in project
 
 Tools Used http://www.nomnoml.com/
 
+![Activity Diagram - Check for admin profile](Assets/ActivityDiagram.png)  
+
 ```
 [<frame>Check Admin login |
 [<start>st]->[Login]
@@ -28,5 +30,3 @@ Tools Used http://www.nomnoml.com/
 [Redirect to admin page] yes ->[<end>e]
 [User page] no ->[<end>e]
 ]```
-
-![Activity Diagram - Check for admin profile](Assets/ActivityDiagram.png)
