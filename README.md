@@ -43,18 +43,42 @@ Actor is two types
 * Primary (Simple user)
 * Secondary (Admin user)
 
+Include and Exclude deines relationship between use case
 
 ![Usecase Diagram - Check for admin profile](Assets/UseCaseDiagram.png)  
 
 Copy below code in http://www.nomnoml.com/
 
-
 ``` nomnoml
 [<frame>Use case diagram |
 [<actor>Simple user] - [Add simple Customer]
 [<actor>Admin user] - [Add Discount Customer]
-[Add Discount Customer] <exclude> --> [Add simple Customer] 
+[Add Discount Customer] <extend> --> [Add simple Customer] 
 [Add simple Customer] <include> -> [<usecase>Send notification] 
 [Add Discount Customer] <include> -> [<usecase>Send notification] 
 ]
 ```
+
+### Class diagram
+
+Class diagram is our prototype which helps us to create objects
+
+![Class Diagram](Assets/ClassDiagram.png) 
+
+Note: 
+* public +
+* private -
+* protected #
+* Abtract class {}
+* Interface <<>>
+
+Copy below code in http://www.nomnoml.com/
+
+``` nomnoml
+[Customer]--:>interface[<<ICustomer>>|+Add()]
+[Customer|+CustomerCode: int;-CustomerName: nvarchar(100);#CustomerName: nvarchar(100)|+Add();-Validate()]
+[GoldCustomer|+Discount()]-:>[Customer]
+
+[<abstract>{Engine}||start()]
+```
+
