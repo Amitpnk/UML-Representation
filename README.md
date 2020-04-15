@@ -97,17 +97,17 @@ Copy below code in http://www.nomnoml.com/
 
 #### Instance-level relationships
 
-##### Composition
-
-![Composition](Assets/Composition.PNG)
-
- A Car has exactly one Carburetor, and a Carburetor is a part of one Car. Carburetors cannot exist as separate parts, detached from a specific car.
-
 ##### Aggregation
 
 ![Aggregation](Assets/Aggregation.PNG)
 
 A Pond has zero or more Ducks, and a Duck has at most one Pond (at a time). Duck can exist separately from a Pond, e.g. it can live near a lake. When we destroy a Pond we usually do not kill all the Ducks
+
+##### Composition
+
+![Composition](Assets/Composition.PNG)
+
+ A Car has exactly one Carburetor, and a Carburetor is a part of one Car. Carburetors cannot exist as separate parts, detached from a specific car.
 
 #### Notation
 
