@@ -103,7 +103,7 @@ It represents relationship between two objects, which is having there own lifecy
 
 Example: Consider Student and Teacher has objects. Here multiple students can associate with a single teacher and a single student can associate with multiple teacher. There is no ownership between this two objects.
 
-![Association](Assets/Associate2.PNG)
+![Association](Assets/Associate2.png)
 
 ##### Aggregation
 
@@ -132,7 +132,7 @@ It represents relationship of object where one object is depended on other objec
 Example : 
 Client is dependent of Server in web application
 
-![Dependency](Assets/Dependency.PNG)
+![Dependency](Assets/Dependency.png)
 
 
 #### Notation
