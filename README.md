@@ -97,17 +97,43 @@ Copy below code in http://www.nomnoml.com/
 
 #### Instance-level relationships
 
+##### Association
+
+It represents relationship between two objects, which is having there own lifecycle and there is no owner. 
+
+Example: Consider Student and Teacher has objects. Here multiple students can associate with a single teacher and a single student can associate with multiple teacher. There is no ownership between this two objects.
+
+![Association](Assets/Associate2.PNG)
+
 ##### Aggregation
+
+It represents relationship of object with there ownership, like one object is <i>whole part</i> or <i>a part of</i> other object
+
+Example : 
+A Pond has zero or more Ducks, and a Duck has at most one Pond (at a time). Duck can exist separately from a Pond, e.g. it can live near a lake. When we destroy a Pond we usually do not kill all the Ducks
+
+Consider Department and Teacher has objects. Here A teacher belong to muliple departments or part of multiple department. But when we delete Department Teacher object will not destroy.
 
 ![Aggregation](Assets/Aggregation.PNG)
 
-A Pond has zero or more Ducks, and a Duck has at most one Pond (at a time). Duck can exist separately from a Pond, e.g. it can live near a lake. When we destroy a Pond we usually do not kill all the Ducks
-
 ##### Composition
+
+It represents relationship of object with parent child relationship, like child object is depended on parent object
+
+Example : 
+A Car has exactly one Carburetor, and a Carburetor is a part of one Car. Carburetors cannot exist as separate parts, detached from a specific car.
 
 ![Composition](Assets/Composition.PNG)
 
- A Car has exactly one Carburetor, and a Carburetor is a part of one Car. Carburetors cannot exist as separate parts, detached from a specific car.
+##### Dependency
+
+It represents relationship of object where one object is depended on other object. 
+
+Example : 
+Client is dependent of Server in web application
+
+![Dependency](Assets/Dependency.PNG)
+
 
 #### Notation
 
